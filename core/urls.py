@@ -3,7 +3,7 @@ from django.urls import path, include
 from rest_framework import permissions, routers
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
-from features.views import *
+
 from solution.views import *
 
 schema_view = get_schema_view(
@@ -23,7 +23,7 @@ schema_view = get_schema_view(
 router = routers.DefaultRouter()
 
 #Register all api that admin need to input data
-router.register(r'admin-features', featuresAdminView)
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -36,7 +36,7 @@ urlpatterns = [
         name='schema-swagger-ui'),
 
     # User View of Features
-    path('features', featuresListView.as_view()),
+   
 
     # User View Solution
     path('solution', solutionListView.as_view()),

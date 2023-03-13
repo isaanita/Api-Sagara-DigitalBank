@@ -29,7 +29,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'mdeditor',
     'drf_yasg',
-    'features',
+
     'solution',
 ]
 
