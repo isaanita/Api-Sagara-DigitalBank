@@ -29,8 +29,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'mdeditor',
     'drf_yasg',
-
+    'featuress',
     'solution',
+    'partnership',
 ]
 
 MIDDLEWARE = [
