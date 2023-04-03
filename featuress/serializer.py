@@ -1,17 +1,12 @@
 from rest_framework import serializers
 from .models import *
 
-class FeaturesSerializer(serializers.ModelSerializer):
+class FeatureSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Features
+        model = Feature
         fields = '__all__'
 
 class SubFeatureSerializer(serializers.ModelSerializer):
     class Meta:
-        model = SubFeatures
-        fields = '__all__'
-
-class BenefitFeatureSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = BenefitFeatures
+        model = SubFeature
         fields = '__all__'
